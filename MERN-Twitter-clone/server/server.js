@@ -17,7 +17,7 @@ app.use(express.json());
 app.use("/images", express.static("images"));
 app.use("/tweetImages", express.static("tweetImages"));
 
-mongoose.connect("mongodb://127.0.0.1/mernDB", (err) => {
+mongoose.connect("mongodb+srv://miniproject1729:HYB5wx96QHQSwrDk@cluster0.ylskpxa.mongodb.net/?retryWrites=true&w=majority", (err) => {
   if (err) console.log(err);
   else console.log("mongdb is connected");
 });
